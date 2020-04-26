@@ -1,0 +1,19 @@
+// Place your key bindings in this file to override the defaults
+[
+    {
+        "key": "ctrl+e",
+        "command": "workbench.action.terminal.focus"
+    },
+    {
+        "key": "ctrl+w",
+        "command": "workbench.action.focusActiveEditorGroup"
+    },
+    {
+        "key": "ctrl+q",
+        "command": "workbench.action.focusSideBar"
+    },
+    {
+        "key": "ctrl+o",
+        "command": "outline.focus"
+    }
+]

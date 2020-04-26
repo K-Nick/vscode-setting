@@ -1,0 +1,121 @@
+{
+    "workbench.colorTheme": "Solarized Dark",
+    "workbench.iconTheme": "vscode-icons",
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "python.jediEnabled": false,
+    "python.pythonPath": "C:\\ProgramData\\Anaconda3\\python.exe",
+    "editor.fontFamily": "Source Code Pro, 'Source Code Pro Italic'",
+    "editor.fontSize": 15,
+    "files.associations": {"*.m": "matlab"},
+    "[matlab]":{
+        "files.encoding" : "gb2312"
+    }, 
+
+    "vim.normalModeKeyBindings": [
+        {
+            "before": [
+                "J"
+            ],
+            "after": [
+                "L","1","5","j"
+            ]
+        },
+        {
+            "before": [
+                "K"
+            ],
+            "after": [
+                "H", "1", "5", "k"
+            ]
+        }
+    ],
+    "vim.insertModeKeyBindings": [
+        {
+            "before": [
+                "j", "k"
+            ],
+            "after": [
+                "<ESC>"
+            ]
+        }
+    ],
+    "vim.useCtrlKeys": false,
+    "vim.useSystemClipboard": true,
+    "editor.acceptSuggestionOnEnter": "off",
+    "terminal.integrated.cursorStyle": "line",
+    "code-runner.runInTerminal": true,
+    "code-runner.executorMap": {
+        "javascript": "node",
+        "java": "cd $dir && javac $fileName && java $fileNameWithoutExt",
+        "c": "cd $dir && gcc -g $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "cpp": "cd $dir && g++ -g $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "objective-c": "cd $dir && gcc -framework Cocoa $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "php": "php",
+        "python": "python -u",
+        "perl": "perl",
+        "perl6": "perl6",
+        "ruby": "ruby",
+        "go": "go run",
+        "lua": "lua",
+        "groovy": "groovy",
+        "powershell": "powershell -ExecutionPolicy ByPass -File",
+        "bat": "cmd /c",
+        "shellscript": "bash",
+        "fsharp": "fsi",
+        "csharp": "scriptcs",
+        "vbscript": "cscript //Nologo",
+        "typescript": "ts-node",
+        "coffeescript": "coffee",
+        "scala": "scala",
+        "swift": "swift",
+        "julia": "julia",
+        "crystal": "crystal",
+        "ocaml": "ocaml",
+        "r": "Rscript",
+        "applescript": "osascript",
+        "clojure": "lein exec",
+        "haxe": "haxe --cwd $dirWithoutTrailingSlash --run $fileNameWithoutExt",
+        "rust": "cd $dir && rustc $fileName && $dir$fileNameWithoutExt",
+        "racket": "racket",
+        "scheme": "csi -script",
+        "ahk": "autohotkey",
+        "autoit": "autoit3",
+        "dart": "dart",
+        "pascal": "cd $dir && fpc $fileName && $dir$fileNameWithoutExt",
+        "d": "cd $dir && dmd $fileName && $dir$fileNameWithoutExt",
+        "haskell": "runhaskell",
+        "nim": "nim compile --verbosity:0 --hints:off --run",
+        "lisp": "sbcl --script",
+        "kit": "kitc --run",
+        "v": "v run",
+        "sass": "sass --style expanded",
+        "scss": "scss --style expanded",
+        "matlab": "cd $dir && matlab -nosplash -nodesktop -r $fileNameWithoutExt" 
+    },
+    "terminal.integrated.shell.windows": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+    "python.languageServer": "Jedi",
+    "C_Cpp.updateChannel": "Insiders",
+    "window.zoomLevel": 0,
+    "matlab.matlabpath": "E:\\MATLAB\\R2017b\\bin\\matlab.exe",
+    "matlab.linterConfig": "E:\\MATLAB\\R2017b\\bin\\win64\\mlint.exe",
+    "matlab.mlintpath": "E:\\MATLAB\\R2017b\\bin\\win64\\mlint.exe",
+    "remote.SSH.remotePlatform": {
+        "TeslaP100": "linux"
+    },
+    "search.followSymlinks": false,
+    "java.home": "C:\\Program Files\\AdoptOpenJDK\\jdk-11.0.7.10-hotspot",
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/.idea":true
+    },
+    "leetcode.hint.commandShortcut": false,
+    "leetcode.hint.setDefaultLanguage": false,
+    "leetcode.hint.configWebviewMarkdown": false,
+    "leetcode.showDescription": "In Webview",
+    "leetcode.workspaceFolder": "C:\\Users\\Administrator\\.leetcode"
+}
