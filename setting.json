@@ -1,12 +1,14 @@
 {
     "workbench.colorTheme": "Solarized Dark",
     "workbench.iconTheme": "vscode-icons",
+    "editor.lineNumbers": "relative",
     "editor.suggestSelection": "first",
+    "editor.wordWrap": "on",
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
     "python.jediEnabled": false,
     "python.pythonPath": "C:\\ProgramData\\Anaconda3\\python.exe",
     "editor.fontFamily": "Source Code Pro, 'Source Code Pro Italic'",
-    "editor.fontSize": 15,
+    "editor.fontSize": 16,
     "files.associations": {"*.m": "matlab"},
     "[matlab]":{
         "files.encoding" : "gb2312"
@@ -18,7 +20,7 @@
                 "J"
             ],
             "after": [
-                "L","1","5","j"
+                "L","1","0","j"
             ]
         },
         {
@@ -26,22 +28,18 @@
                 "K"
             ],
             "after": [
-                "H", "1", "5", "k"
-            ]
-        }
-    ],
-    "vim.insertModeKeyBindings": [
-        {
-            "before": [
-                "j", "k"
-            ],
-            "after": [
-                "<ESC>"
+                "H", "1", "0", "k"
             ]
         }
     ],
     "vim.useCtrlKeys": false,
     "vim.useSystemClipboard": true,
+    "vim.foldfix": true,
+    "vim.easymotion": true,
+    "vim.normalModeKeyBindingsNonRecursive": [{
+        "before": [" "],
+        "after": ["leader", "leader", "leader", "b", "d", "w"]
+    }],
     "editor.acceptSuggestionOnEnter": "off",
     "terminal.integrated.cursorStyle": "line",
     "code-runner.runInTerminal": true,
@@ -101,7 +99,9 @@
     "matlab.linterConfig": "E:\\MATLAB\\R2017b\\bin\\win64\\mlint.exe",
     "matlab.mlintpath": "E:\\MATLAB\\R2017b\\bin\\win64\\mlint.exe",
     "remote.SSH.remotePlatform": {
-        "TeslaP100": "linux"
+        "TeslaP100": "linux",
+        "111.222.48.75": "linux",
+        "elab": "linux"
     },
     "search.followSymlinks": false,
     "java.home": "C:\\Program Files\\AdoptOpenJDK\\jdk-11.0.7.10-hotspot",
@@ -111,11 +111,22 @@
         "**/.hg": true,
         "**/CVS": true,
         "**/.DS_Store": true,
-        "**/.idea":true
+        "**/.idea": true,
+        "**/.classpath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.factorypath": true
     },
     "leetcode.hint.commandShortcut": false,
     "leetcode.hint.setDefaultLanguage": false,
     "leetcode.hint.configWebviewMarkdown": false,
     "leetcode.showDescription": "In Webview",
-    "leetcode.workspaceFolder": "C:\\Users\\Administrator\\.leetcode"
+    "leetcode.workspaceFolder": "C:\\Users\\Administrator\\.leetcode",
+    "leetcode.hint.commentDescription": false,
+    "java.semanticHighlighting.enabled": true,
+    "icie.compile.windowsMingwPath": "C:\\MinGW",
+    "matlab-formatter.pythonPath": "C:\\ProgramData\\Anaconda3\\python.exe",
+    "terminal.integrated.inheritEnv": false,
+    "python.dataScience.askForKernelRestart": false,
+    "workbench.startupEditor": "newUntitledFile"
 }
