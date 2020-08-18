@@ -43,12 +43,13 @@
     "editor.acceptSuggestionOnEnter": "off",
     "terminal.integrated.cursorStyle": "line",
     "code-runner.runInTerminal": true,
+    "code-runner.fileDirectoryAsCwd": true,
     "code-runner.executorMap": {
         "javascript": "node",
         "java": "cd $dir && javac $fileName && java $fileNameWithoutExt",
-        "c": "cd $dir && gcc -g $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
-        "cpp": "cd $dir && g++ -g $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
-        "objective-c": "cd $dir && gcc -framework Cocoa $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "c": "gcc -g $fileName -o $fileNameWithoutExt && ./$fileNameWithoutExt",
+        "cpp": "g++ -g $fileName -o $fileNameWithoutExt && ./$fileNameWithoutExt",
+        "objective-c": "cd $dir && gcc -framework Cocoa $fileName -o $dir$fileNameWithoutExt && $dir$fileNameWithoutExt",
         "php": "php",
         "python": "python -u",
         "perl": "perl",
@@ -91,8 +92,8 @@
         "scss": "scss --style expanded",
         "matlab": "cd $dir && matlab -nosplash -nodesktop -r $fileNameWithoutExt" 
     },
-    "terminal.integrated.shell.windows": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
-    "python.languageServer": "Jedi",
+    "terminal.integrated.shell.windows": "C:\\Windows\\System32\\cmd.exe",
+    "python.languageServer": "Microsoft",
     "C_Cpp.updateChannel": "Insiders",
     "window.zoomLevel": 0,
     "matlab.matlabpath": "E:\\MATLAB\\R2017b\\bin\\matlab.exe",
@@ -128,5 +129,8 @@
     "matlab-formatter.pythonPath": "C:\\ProgramData\\Anaconda3\\python.exe",
     "terminal.integrated.inheritEnv": false,
     "python.dataScience.askForKernelRestart": false,
-    "workbench.startupEditor": "newUntitledFile"
+    "workbench.startupEditor": "newUntitledFile",
+    "vsicons.dontShowNewVersionMessage": true,
+    "http.proxySupport": "off",
+    "leetcode.endpoint": "leetcode"
 }
